@@ -5,6 +5,14 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@android:color/holo_orange_light"
     tools:context=".spalsh_activity">
+
+
+    <!-- Set a distinct background color for the splash screen -->
+    <!-- the Line
+        android:background="@android:color/holo_orange_light"
+            above is added for that purpose of background colour -->
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
