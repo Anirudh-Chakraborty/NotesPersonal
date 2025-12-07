@@ -29,6 +29,8 @@
         android:id="@+id/NotePersonal"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:textSize="24dp"
         android:text="NotePersonal"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
