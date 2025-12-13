@@ -24,13 +24,15 @@ public class spalsh_activity extends AppCompatActivity {
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
             return insets;
         });
-    //spalsh Screen
-        Handler handler = new Handler(Looper.getMainLooper()); //(the main thread looper)
-        handler.postDelayed(() -> // postDelayed is the method used to delay, "->" this is the lambda expression
-        {
-            Intent intent = new Intent(spalsh_activity.this, home_activity.class);
-            startActivity(intent);
-            finish(); // finish so that if the user presses back, they don't return to the splash screen
-        }, 5000); // 2 seconds delay
+        //spalsh Screen
+        Handler handler = new Handler(Looper.getMainLooper());
+        handler.postDelayed(new Runnable() {
+            @Override
+            public void run() {
+                Intent intent = new Intent(spalsh_activity.this, MainActivity.class);
+                startActivity(intent);
+                finish();
+            }
+        },2000);// 2000 milliseconds = 2 seconds
     }
-    }
+}
